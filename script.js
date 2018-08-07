@@ -107,31 +107,25 @@ const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 39
         let newArray1 = document.createTextNode(sampleArray);
         katas11.appendChild(newArray1);
 
-//katas12 This ones needs to be addresssed again
-        let newArray2 = [" "];
+//katas12
         for (let i = 0; i < sampleArray.length; i++) { 
             if ((sampleArray[i] % 2) === 0) {
-                newArray2.push(sampleArray[i]);
-            }
-            else {
-            let katas12 = document.getElementById("katas12");
-            let result12 = document.createTextNode(newArray2)
+                d12 = " " + sampleArray[i];
+                let katas12 = document.getElementById("katas12");
+            let result12 = document.createTextNode(d12);
             katas12.appendChild(result12);
-        }
+            }
         }
 
 //katas13 This one needs to be addressed again
-        let newArray3 = [" "];
         for (let i = 0; i < sampleArray.length; i++) { 
             if ((sampleArray[i] % 2) === 1) {
-                newArray3.push(sampleArray[i]);
-            }
-            else {
+                d13 = " " + sampleArray[i];
             let katas13 = document.getElementById("katas13");
-            let result13 = document.createTextNode(newArray3)
+            let result13 = document.createTextNode(d13)
             katas13.appendChild(result13);
 }
-}
+        }
 
 //katas14
         let newArray4 = " ";
