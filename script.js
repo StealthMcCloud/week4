@@ -186,8 +186,10 @@ const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 39
         katas18.appendChild(result18);
 
 
-
 //katas19
+        for (let i = 0; i < 20; i++) {
+            
+        }
 
 
 //katas20
