@@ -156,13 +156,6 @@ const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 39
         katas16.appendChild(result16);
 
 //katas17
-        // let d17 = " ";
-        // for (let i = 0; i < sampleArray.length; i++) {
-        //     d17 = Math.min(sampleArray[i]);
-        // }
-        // let katas17 = document.getElementById("katas17");
-        //     let result17 = document.createTextNode(d17);
-        //     katas17.appendChild(result17);
         let smallest = sampleArray[0]
         for (let i = 0; i < sampleArray.length; i++) {
             if (sampleArray[i]<smallest){
@@ -188,17 +181,68 @@ const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 39
 
 //katas19
         for (let i = 0; i < 20; i++) {
-            
-        }
-
+        let katas19 = document.getElementById('katas19');
+        let block = document.createElement("div");
+        document.createElement("div");
+        block.style.backgroundColor = "gray";
+        block.style.width = "100px";
+        block.style.height = "20px";
+        block.style.marginTop = "2px";
+        katas19.appendChild(block);
+}
 
 //katas20
-
+for (let i = 5; i <= 100; i += 5) {
+    let katas20 = document.getElementById('katas20');
+    let block = document.createElement("div");
+    document.createElement("div");
+    block.style.backgroundColor = "gray";
+    block.style.width = 100 + i + "px";
+    block.style.height = "20px";
+    block.style.marginTop = "2px";
+    katas20.appendChild(block);
+}
 
 //katas21
+for (let i = 0; i < 20; i++) {
+    let katas21 = document.getElementById('katas21');
+    let block = document.createElement("div");
+    document.createElement("div");
+    block.style.backgroundColor = "gray";
+    block.style.width = sampleArray[i] + "px";
+    block.style.height = "20px";
+    block.style.marginTop = "2px";
+    katas21.appendChild(block);
+}
 
 
 //katas22
-
+for (let i = 0; i < 20; i++) {
+    let katas22 = document.getElementById('katas22');
+    let block = document.createElement("div");
+    document.createElement("div");
+    block.style.backgroundColor = "gray";
+    block.style.width = sampleArray[i] + "px";
+    block.style.height = "20px";
+    block.style.marginTop = "2px";
+    katas22.appendChild(block);
+    if(i % 2 == 0) {
+        block.style.background = "red";
+    }
+}
 
 //katas23
+for (let i = 0; i < 20; i++) {
+    let katas23 = document.getElementById('katas23');
+    let block = document.createElement("div");
+    document.createElement("div");
+    block.style.backgroundColor = "gray";
+    block.style.width = sampleArray[i] + "px";
+    block.style.height = "20px";
+    block.style.marginTop = "2px";
+    katas23.appendChild(block);
+    if ((sampleArray[i] % 2) === 0) {
+        block.style.backgroundColor = "red"
+
+    }
+}
