@@ -156,13 +156,35 @@ const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 39
         katas16.appendChild(result16);
 
 //katas17
-        let d17 = " ";
+        // let d17 = " ";
+        // for (let i = 0; i < sampleArray.length; i++) {
+        //     d17 = Math.min(sampleArray[i]);
+        // }
+        // let katas17 = document.getElementById("katas17");
+        //     let result17 = document.createTextNode(d17);
+        //     katas17.appendChild(result17);
+        let smallest = sampleArray[0]
         for (let i = 0; i < sampleArray.length; i++) {
-            d17 = Math.min(sampleArray[i]);
+            if (sampleArray[i]<smallest){
+                smallest = sampleArray[i];
+            }
         }
         let katas17 = document.getElementById("katas17");
-            let result17 = document.createTextNode(d17);
-            katas17.appendChild(result17);
+        let result17 = document.createTextNode(smallest);
+        katas17.appendChild(result17);
+
+
+//katas18
+        let largest = sampleArray[0]
+        for (let i = 0; i < sampleArray.length; i++) {
+            if (sampleArray[i]>largest){
+                largest = sampleArray[i];
+            }
+        }
+        let katas18 = document.getElementById("katas18");
+        let result18 = document.createTextNode(largest);
+        katas18.appendChild(result18);
+
 
 
 //katas19
