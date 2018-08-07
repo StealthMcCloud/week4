@@ -107,10 +107,55 @@ const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 39
         let newArray1 = document.createTextNode(sampleArray);
         katas11.appendChild(newArray1);
 
-//katas12
+//katas12 This ones needs to be addresssed again
+        let newArray2 = [" "];
+        for (let i = 0; i < sampleArray.length; i++) { 
+            if ((sampleArray[i] % 2) === 0) {
+                newArray2.push(sampleArray[i]);
+            }
+            else {
+            let katas12 = document.getElementById("katas12");
+            let result12 = document.createTextNode(newArray2)
+            katas12.appendChild(result12);
+        }
+        }
 
-        for (let i = 0; i < sampleArray.length; i++) {
-        if(sampleArray[i] % 2 === 0) { 
-        katas12.push(sampleArray[i]);
-    }
+//katas13 This one needs to be addressed again
+        let newArray3 = [" "];
+        for (let i = 0; i < sampleArray.length; i++) { 
+            if ((sampleArray[i] % 2) === 1) {
+                newArray3.push(sampleArray[i]);
+            }
+            else {
+            let katas13 = document.getElementById("katas13");
+            let result13 = document.createTextNode(newArray3)
+            katas13.appendChild(result13);
 }
+}
+
+//katas14
+        let newArray4 = " ";
+        for (let i = 0; i < sampleArray.length; i++) {
+            newArray4 += " " + (sampleArray[i] * sampleArray[i]);
+        }
+        let katas14 = document.getElementById("katas14");
+        let result14 = document.createTextNode(newArray4);
+        katas14.appendChild(result14);
+
+
+//katas15
+        let d15 = 0;
+        for (let i = 0; i <= 20; i++) {
+            d15 = d15 + i;
+        }
+        let katas15 = document.getElementById("katas15");
+        let result15 = document.createTextNode(d15);
+        katas15.appendChild(result15);
+
+//katas16
+        let newArray6 = " ";
+        let d16 = 0
+        for (let i = 0; i <= sampleArray.length; i++) {
+            newArray6 += " " + sampleArray[i];
+            console.log(newArray6)
+        }
