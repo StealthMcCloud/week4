@@ -147,9 +147,34 @@ const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 39
         katas15.appendChild(result15);
 
 //katas16
-        let newArray6 = " ";
         let d16 = 0
-        for (let i = 0; i <= sampleArray.length; i++) {
-            newArray6 += " " + sampleArray[i];
-            console.log(newArray6)
+        for (let i = 0; i < sampleArray.length; i++) {
+            d16 = d16 + sampleArray[i];
         }
+        let katas16 = document.getElementById("katas16");
+        let result16 = document.createTextNode(d16);
+        katas16.appendChild(result16);
+
+//katas17
+        let d17 = " ";
+        for (let i = 0; i < sampleArray.length; i++) {
+            d17 = Math.min(sampleArray[i]);
+        }
+        let katas17 = document.getElementById("katas17");
+            let result17 = document.createTextNode(d17);
+            katas17.appendChild(result17);
+
+
+//katas19
+
+
+//katas20
+
+
+//katas21
+
+
+//katas22
+
+
+//katas23
